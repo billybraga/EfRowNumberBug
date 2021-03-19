@@ -22,7 +22,7 @@ namespace EfRowNumberBug
                         x => new
                         {
                             Id = x.Id,
-                            Organization = new
+                            Child = new
                             {
                                 Id = x.OptionalChild!.Id,
                                 Version = x.OptionalChild!.Version,
