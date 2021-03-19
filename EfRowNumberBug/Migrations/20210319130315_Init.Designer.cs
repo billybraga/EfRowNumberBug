@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfRowNumberBug.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210319121311_Init")]
+    [Migration("20210319130315_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace EfRowNumberBug.Migrations
             modelBuilder.Entity("EfRowNumberBug.Entities.Parent", b =>
                 {
                     b.HasOne("EfRowNumberBug.Entities.OptionalChild", "OptionalChild")
-                        .WithMany("Scopes")
+                        .WithMany("Parents")
                         .HasForeignKey("OptionalChildId");
 
                     b.Navigation("OptionalChild");
@@ -71,7 +71,7 @@ namespace EfRowNumberBug.Migrations
 
             modelBuilder.Entity("EfRowNumberBug.Entities.OptionalChild", b =>
                 {
-                    b.Navigation("Scopes");
+                    b.Navigation("Parents");
                 });
 #pragma warning restore 612, 618
         }

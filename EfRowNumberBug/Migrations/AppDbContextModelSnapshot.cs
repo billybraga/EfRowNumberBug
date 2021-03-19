@@ -61,7 +61,7 @@ namespace EfRowNumberBug.Migrations
             modelBuilder.Entity("EfRowNumberBug.Entities.Parent", b =>
                 {
                     b.HasOne("EfRowNumberBug.Entities.OptionalChild", "OptionalChild")
-                        .WithMany("Scopes")
+                        .WithMany("Parents")
                         .HasForeignKey("OptionalChildId");
 
                     b.Navigation("OptionalChild");
@@ -69,7 +69,7 @@ namespace EfRowNumberBug.Migrations
 
             modelBuilder.Entity("EfRowNumberBug.Entities.OptionalChild", b =>
                 {
-                    b.Navigation("Scopes");
+                    b.Navigation("Parents");
                 });
 #pragma warning restore 612, 618
         }
