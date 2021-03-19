@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfRowNumberBug", "EfRowNumberBug\EfRowNumberBug.csproj", "{04C2617E-008B-4816-817E-15A49A0EDD74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{F775E5FE-C373-4B16-8C84-3DBC4065E5E0}"
+ProjectSection(SolutionItems) = preProject
+	Readme.md = Readme.md
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04C2617E-008B-4816-817E-15A49A0EDD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C2617E-008B-4816-817E-15A49A0EDD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C2617E-008B-4816-817E-15A49A0EDD74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C2617E-008B-4816-817E-15A49A0EDD74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
